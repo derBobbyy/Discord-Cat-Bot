@@ -46,6 +46,7 @@ async def on_ready():
 
 
 
+
 @bot.command()
 async def cat(ctx):
     await ctx.send(file=discord.File(await get_cat()))
