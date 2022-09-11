@@ -46,11 +46,6 @@ async def on_ready():
 
 
 
-#@bot.event
-#async def on_message(message: discord.Message, ctx):
-#    if message.content.startswith("!cat"):
-#        await ctx.send(file=discord.File(await get_cat()))
-
 @bot.command()
 async def cat(ctx):
     await ctx.send(file=discord.File(await get_cat()))
